@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtAplicacionDeNotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APLICACIÓN DE IDEAS"
+        android:fontFamily="monospace"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="¿Qué estás pensando?"
+        android:fontFamily="monospace"
+        android:layout_below="@id/txtAplicacionDeNotas"/>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextData"
+        android:fontFamily="monospace"
+        android:text="Guardar"/>
+
+    <Button
+        android:id="@+id/btnShowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:fontFamily="monospace"
+        android:text="Mostrar Datos"/>
+
+    <Button
+        android:id="@+id/btnResetData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnShowData"
+        android:fontFamily="monospace"
+        android:text="Resetear Datos"/>
+
+    <ListView
+        android:id="@+id/listViewData"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnResetData"/>
+
+
+
+</RelativeLayout>
